@@ -1,51 +1,1890 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements -->
+<html lang="en-US" class="scheme_original js no-touch csstransitions js_active vc_desktop vc_transform vc_transform">
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Dairy Connect</title>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="./Dairy Farm_files/css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/layout.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/settings.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/woocommerce-layout.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/woocommerce-smallscreen.css" type="text/css"
+		media="only screen and (max-width: 768px)" />
+	<link rel="stylesheet" href="./Dairy Farm_files/woocommerce.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/fontello.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/core.animation.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/shortcodes.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/theme.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/plugin.woocommerce.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/custom.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/responsive.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/comp.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./Dairy Farm_files/swiper.css" type="text/css" media="all" />
+	<link rel="shortcut icon" href="./pictures/logo.jpeg" type="image/x-icon" />
+	<script src="./Dairy Farm_files/emoji-release.min.js.download" type="text/javascript" defer=""></script>
+	<style></style>
+	<style>
+		.tp-caption.BigWhiteText,
+		.BigWhiteText {
+			color: rgba(255, 255, 255, 1);
+			font-size: 108px;
+			line-height: 150px;
+			font-weight: 700;
+			font-style: normal;
+			font-family: Libre Baskerville;
+			padding: 0px 0px 0px 0px;
+			text-decoration: none;
+			text-align: left;
+			background-color: transparent;
+			border-color: transparent;
+			border-style: none;
+			border-width: 0px;
+			border-radius: 0px 0px 0px 0px;
+		}
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+		.tp-caption.SmallWhiteText,
+		.SmallWhiteText {
+			color: rgba(255, 255, 255, 1);
+			font-size: 40px;
+			line-height: 50px;
+			font-weight: 400;
+			font-style: normal;
+			font-family: Oswald;
+			padding: 0px 0px 0px 0px;
+			text-decoration: none;
+			text-align: left;
+			background-color: transparent;
+			border-color: transparent;
+			border-style: none;
+			border-width: 0px;
+			border-radius: 0px 0px 0px 0px;
+		}
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+		.tp-caption.ButtonText,
+		.ButtonText {
+			color: rgba(35, 31, 32, 1);
+			font-size: 15px;
+			line-height: 23px;
+			font-weight: 400;
+			font-style: normal;
+			font-family: Oswald;
+			padding: 12px 35px 12px 35px;
+			text-decoration: none;
+			text-align: left;
+			background-color: rgba(254, 195, 33, 1);
+			border-color: rgba(254, 195, 33, 1);
+			border-style: solid;
+			border-width: 2px;
+			border-radius: 0px 0px 0px 0px;
+		}
 
-jobs:
-  # Build job
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+		.tp-caption.ButtonText:hover,
+		.ButtonText:hover {
+			color: rgba(255, 255, 255, 1);
+			text-decoration: none;
+			background-color: rgba(255, 255, 255, 0);
+			border-color: rgba(255, 255, 255, 1);
+			border-style: solid;
+			border-width: 2px;
+			border-radius: 0px 0px 0px 0px;
+			cursor: pointer;
+		}
+	</style>
+	<style>
+		.custom.tp-bullets {}
 
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+		.custom.tp-bullets:before {
+			content: " ";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			padding: 10px;
+			margin-left: -10px;
+			margin-top: -10px;
+			box-sizing: content-box;
+		}
+
+		.custom .tp-bullet {
+			width: 12px;
+			height: 12px;
+			position: absolute;
+			background: #aaa;
+			background: rgba(125, 125, 125, 0.5);
+			cursor: pointer;
+			box-sizing: content-box;
+		}
+
+		.custom .tp-bullet:hover,
+		.custom .tp-bullet.selected {
+			background: rgb(125, 125, 125);
+		}
+
+		.custom .tp-bullet-image {}
+
+		.custom .tp-bullet-title {}
+	</style>
+	<style></style>
+	<style>
+		.tp-caption.BigWhiteText,
+		.BigWhiteText {
+			color: rgba(255, 255, 255, 1);
+			font-size: 108px;
+			line-height: 150px;
+			font-weight: 700;
+			font-style: normal;
+			font-family: Libre Baskerville;
+			padding: 0px 0px 0px 0px;
+			text-decoration: none;
+			text-align: left;
+			background-color: transparent;
+			border-color: transparent;
+			border-style: none;
+			border-width: 0px;
+			border-radius: 0px 0px 0px 0px;
+		}
+
+		.tp-caption.SmallWhiteText,
+		.SmallWhiteText {
+			color: rgba(255, 255, 255, 1);
+			font-size: 40px;
+			line-height: 50px;
+			font-weight: 400;
+			font-style: normal;
+			font-family: Oswald;
+			padding: 0px 0px 0px 0px;
+			text-decoration: none;
+			text-align: left;
+			background-color: transparent;
+			border-color: transparent;
+			border-style: none;
+			border-width: 0px;
+			border-radius: 0px 0px 0px 0px;
+		}
+
+		.tp-caption.ButtonText,
+		.ButtonText {
+			color: rgba(35, 31, 32, 1);
+			font-size: 15px;
+			line-height: 23px;
+			font-weight: 400;
+			font-style: normal;
+			font-family: Oswald;
+			padding: 12px 35px 12px 35px;
+			text-decoration: none;
+			text-align: left;
+			background-color: rgba(254, 195, 33, 1);
+			border-color: rgba(254, 195, 33, 1);
+			border-style: solid;
+			border-width: 2px;
+			border-radius: 0px 0px 0px 0px;
+		}
+
+		.tp-caption.ButtonText:hover,
+		.ButtonText:hover {
+			color: rgba(255, 255, 255, 1);
+			text-decoration: none;
+			background-color: rgba(255, 255, 255, 0);
+			border-color: rgba(255, 255, 255, 1);
+			border-style: solid;
+			border-width: 2px;
+			border-radius: 0px 0px 0px 0px;
+			cursor: pointer;
+		}
+	</style>
+	<style>
+		.custom.tp-bullets {}
+
+		.custom.tp-bullets:before {
+			content: " ";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			padding: 10px;
+			margin-left: -10px;
+			margin-top: -10px;
+			box-sizing: content-box;
+		}
+
+		.custom .tp-bullet {
+			width: 12px;
+			height: 12px;
+			position: absolute;
+			background: #aaa;
+			background: rgba(125, 125, 125, 0.5);
+			cursor: pointer;
+			box-sizing: content-box;
+		}
+
+		.custom .tp-bullet:hover,
+		.custom .tp-bullet.selected {
+			background: rgb(125, 125, 125);
+		}
+
+		.custom .tp-bullet-image {}
+
+		.custom .tp-bullet-title {}
+	</style>
+	<style></style>
+	<style>
+		.tp-caption.BigWhiteText,
+		.BigWhiteText {
+			color: rgba(255, 255, 255, 1);
+			font-size: 108px;
+			line-height: 150px;
+			font-weight: 700;
+			font-style: normal;
+			font-family: Libre Baskerville;
+			padding: 0px 0px 0px 0px;
+			text-decoration: none;
+			text-align: left;
+			background-color: transparent;
+			border-color: transparent;
+			border-style: none;
+			border-width: 0px;
+			border-radius: 0px 0px 0px 0px;
+		}
+
+		.tp-caption.SmallWhiteText,
+		.SmallWhiteText {
+			color: rgba(255, 255, 255, 1);
+			font-size: 40px;
+			line-height: 50px;
+			font-weight: 400;
+			font-style: normal;
+			font-family: Oswald;
+			padding: 0px 0px 0px 0px;
+			text-decoration: none;
+			text-align: left;
+			background-color: transparent;
+			border-color: transparent;
+			border-style: none;
+			border-width: 0px;
+			border-radius: 0px 0px 0px 0px;
+		}
+
+		.tp-caption.ButtonText,
+		.ButtonText {
+			color: rgba(35, 31, 32, 1);
+			font-size: 15px;
+			line-height: 23px;
+			font-weight: 400;
+			font-style: normal;
+			font-family: Oswald;
+			padding: 12px 35px 12px 35px;
+			text-decoration: none;
+			text-align: left;
+			background-color: rgba(254, 195, 33, 1);
+			border-color: rgba(254, 195, 33, 1);
+			border-style: solid;
+			border-width: 2px;
+			border-radius: 0px 0px 0px 0px;
+		}
+
+		.tp-caption.ButtonText:hover,
+		.ButtonText:hover {
+			color: rgba(255, 255, 255, 1);
+			text-decoration: none;
+			background-color: rgba(255, 255, 255, 0);
+			border-color: rgba(255, 255, 255, 1);
+			border-style: solid;
+			border-width: 2px;
+			border-radius: 0px 0px 0px 0px;
+			cursor: pointer;
+		}
+	</style>
+	<style>
+		.custom.tp-bullets {}
+
+		.custom.tp-bullets:before {
+			content: " ";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			padding: 10px;
+			margin-left: -10px;
+			margin-top: -10px;
+			box-sizing: content-box;
+		}
+
+		.custom .tp-bullet {
+			width: 12px;
+			height: 12px;
+			position: absolute;
+			background: #aaa;
+			background: rgba(125, 125, 125, 0.5);
+			cursor: pointer;
+			box-sizing: content-box;
+		}
+
+		.custom .tp-bullet:hover,
+		.custom .tp-bullet.selected {
+			background: rgb(125, 125, 125);
+		}
+
+		.custom .tp-bullet-image {}
+
+		.custom .tp-bullet-title {}
+	</style>
+</head>
+
+<body
+	class="index home page body_style_wide body_filled article_style_stretch layout_single-standard template_single-standard scheme_original top_panel_show top_panel_above sidebar_hide sidebar_outer_hide vc_responsive top_panel_fixed">
+	<a id="toc_home" class="sc_anchor" title="Home"
+		data-description="&lt;i&gt;Return to Home&lt;/i&gt; - &lt;br&gt;navigate to home page of the site"
+		data-icon="icon-home" data-url="index.html" data-separator="yes"></a>
+	<a id="toc_top" class="sc_anchor" title="To Top"
+		data-description="&lt;i&gt;Back to top&lt;/i&gt; - &lt;br&gt;scroll to top of the page"
+		data-icon="icon-double-up" data-url="" data-separator="yes"></a>
+	<div class="body_wrap">
+		<div class="page_wrap">
+			<div class="top_panel_fixed_wrap" style="height: 80px"></div>
+			<header class="top_panel_wrap top_panel_style_4 scheme_original menu_show"
+				style="margin-top: 0px; display: block">
+				<div class="top_panel_wrap_inner top_panel_inner_style_4 top_panel_position_above">
+					<div class="top_panel_middle">
+						<div class="content_wrap">
+							<div class="contact_logo">
+								<div class="logo">
+									<a href="http://dairy-farm-html.ancorathemes.com/index.html">
+										<img src="./pictures/logo.jpeg" class="logo_main" alt="" width="239"
+											height="59" />
+										<img src="./pictures/logo.jpeg" class="logo_fixed" alt="" width="239"
+											height="59" />
+									</a>
+								</div>
+							</div>
+							<div class="contact_field contact_cart">
+								<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+									class="top_panel_cart_button" data-items="0" data-summa="Rs0.00">
+									<span class="contact_icon icon-1"></span>
+									<span class="contact_label contact_cart_label">cart:</span>
+									<span class="contact_cart_totals">
+										<span class="cart_items">0 Items</span>
+										<span class="cart_summa">Rs0.00</span>
+									</span>
+								</a>
+								<ul class="widget_area sidebar_cart sidebar">
+									<li>
+										<div class="widget woocommerce widget_shopping_cart">
+											<div class="hide_cart_widget_if_empty">
+												<div class="widget_shopping_cart_content">
+													<p class="woocommerce-mini-cart__empty-message">
+														No products in the cart.
+													</p>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="menu_main_wrap">
+								<nav class="menu_main_nav_area menu_hover_fade">
+									<ul id="menu_main" class="menu_main_nav inited sf-js-enabled sf-arrows">
+										<li
+											class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children">
+											<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+												class="sf-with-ul"><span>Home</span></a>
+											<ul class="sub-menu animated fast fadeOutDown" style="display: none">
+												<li class="menu-item current-menu-item">
+													<a href="http://dairy-farm-html.ancorathemes.com/index.html"><span>Homepage
+															1</span></a>
+												</li>
+												<li class="menu-item">
+													<a href="http://dairy-farm-html.ancorathemes.com/home-2.html"><span>Homepage
+															2</span></a>
+												</li>
+												<li class="menu-item">
+													<a href="http://dairy-farm-html.ancorathemes.com/home-3.html"><span>Homepage
+															3</span></a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children">
+											<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+												class="sf-with-ul"><span>About us</span></a>
+											<ul class="sub-menu fadeOutDown animated fast" style="display: none">
+												<li class="menu-item">
+													<a href="http://dairy-farm-html.ancorathemes.com/about-1.html"><span>About
+															1</span></a>
+												</li>
+												<li class="menu-item">
+													<a href="http://dairy-farm-html.ancorathemes.com/about-2.html"><span>About
+															2</span></a>
+												</li>
+												<li class="menu-item menu-item-has-children">
+													<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+														class="sf-with-ul"><span>Features</span></a>
+													<ul class="sub-menu animated fast fadeOutDown"
+														style="display: none">
+														<li class="menu-item">
+															<a
+																href="http://dairy-farm-html.ancorathemes.com/shortcodes.html"><span>Shortcodes</span></a>
+														</li>
+														<li class="menu-item">
+															<a
+																href="http://dairy-farm-html.ancorathemes.com/typography.html"><span>Typography</span></a>
+														</li>
+													</ul>
+												</li>
+												<li class="menu-item menu-item-has-children">
+													<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+														class="sf-with-ul"><span>Gallery</span></a>
+													<ul class="sub-menu animated fast fadeOutDown"
+														style="display: none">
+														<li class="menu-item">
+															<a
+																href="http://dairy-farm-html.ancorathemes.com/cobbles.html"><span>Gallery
+																	Cobbles</span></a>
+														</li>
+														<li class="menu-item">
+															<a href="http://dairy-farm-html.ancorathemes.com/grid.html"><span>Gallery
+																	Grid</span></a>
+														</li>
+														<li class="menu-item">
+															<a
+																href="http://dairy-farm-html.ancorathemes.com/masonry.html"><span>Gallery
+																	Masonry</span></a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item">
+											<a
+												href="http://dairy-farm-html.ancorathemes.com/farm.html"><span>Farm</span></a>
+										</li>
+										<li class="menu-item menu-item-has-children">
+											<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+												class="sf-with-ul"><span>Blog</span></a>
+											<ul class="sub-menu fadeOutDown animated fast" style="display: none">
+												<li class="menu-item">
+													<a
+														href="http://dairy-farm-html.ancorathemes.com/classic.html"><span>Classic</span></a>
+												</li>
+												<li class="menu-item menu-item-has-children">
+													<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+														class="sf-with-ul"><span>Masonry</span></a>
+													<ul class="sub-menu fadeOutDown animated fast"
+														style="display: none">
+														<li class="menu-item">
+															<a
+																href="http://dairy-farm-html.ancorathemes.com/masonry-2-columns.html"><span>Masonry
+																	2 columns</span></a>
+														</li>
+														<li class="menu-item">
+															<a
+																href="http://dairy-farm-html.ancorathemes.com/masonry-3-columns.html"><span>Masonry
+																	3 columns</span></a>
+														</li>
+													</ul>
+												</li>
+												<li class="menu-item menu-item-has-children">
+													<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+														class="sf-with-ul"><span>Portfolio</span></a>
+													<ul class="sub-menu animated fast fadeOutDown"
+														style="display: none">
+														<li class="menu-item">
+															<a
+																href="http://dairy-farm-html.ancorathemes.com/portfolio-2-columns.html"><span>Portfolio
+																	2 columns</span></a>
+														</li>
+														<li class="menu-item">
+															<a
+																href="http://dairy-farm-html.ancorathemes.com/portfolio-3-columns.html"><span>Portfolio
+																	3 columns</span></a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item">
+											<a
+												href="http://dairy-farm-html.ancorathemes.com/shop.html"><span>Products</span></a>
+										</li>
+										<li class="menu-item">
+											<a
+												href="http://dairy-farm-html.ancorathemes.com/recipes.html"><span>Recipes</span></a>
+										</li>
+										<li class="menu-item">
+											<a
+												href="http://dairy-farm-html.ancorathemes.com/contacts.html"><span>Contacts</span></a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="header_mobile" style="display: none">
+				<div class="content_wrap">
+					<div class="menu_button icon-menu"></div>
+					<div class="logo">
+						<a href="http://dairy-farm-html.ancorathemes.com/index.html">
+							<img src="./Dairy Farm_files/logo.png" class="logo_main" alt="" width="239" height="59" />
+						</a>
+					</div>
+				</div>
+				<div class="side_wrap">
+					<div class="close">Close</div>
+					<div class="panel_top">
+						<nav class="menu_main_nav_area">
+							<ul id="menu_mobile" class="menu_main_nav">
+								<li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children">
+									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"><span
+											class="open_child_menu"></span><span>Home</span></a>
+									<ul class="sub-menu">
+										<li class="menu-item current-menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/index.html"><span>Homepage
+													1</span></a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/home-2.html"><span>Homepage
+													2</span></a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/home-3.html"><span>Homepage
+													3</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item menu-item-has-children">
+									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"><span
+											class="open_child_menu"></span><span>About us</span></a>
+									<ul class="sub-menu">
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/about-1.html"><span>About
+													1</span></a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/about-2.html"><span>About
+													2</span></a>
+										</li>
+										<li class="menu-item menu-item-has-children">
+											<a
+												href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"><span
+													class="open_child_menu"></span><span>Features</span></a>
+											<ul class="sub-menu">
+												<li class="menu-item">
+													<a
+														href="http://dairy-farm-html.ancorathemes.com/shortcodes.html"><span>Shortcodes</span></a>
+												</li>
+												<li class="menu-item">
+													<a
+														href="http://dairy-farm-html.ancorathemes.com/typography.html"><span>Typography</span></a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children">
+											<a
+												href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"><span
+													class="open_child_menu"></span><span>Gallery</span></a>
+											<ul class="sub-menu">
+												<li class="menu-item">
+													<a href="http://dairy-farm-html.ancorathemes.com/cobbles.html"><span>Gallery
+															Cobbles</span></a>
+												</li>
+												<li class="menu-item">
+													<a href="http://dairy-farm-html.ancorathemes.com/grid.html"><span>Gallery
+															Grid</span></a>
+												</li>
+												<li class="menu-item">
+													<a href="http://dairy-farm-html.ancorathemes.com/masonry.html"><span>Gallery
+															Masonry</span></a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item">
+									<a href="http://dairy-farm-html.ancorathemes.com/farm.html"><span>Farm</span></a>
+								</li>
+								<li class="menu-item menu-item-has-children">
+									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"><span
+											class="open_child_menu"></span><span>Blog</span></a>
+									<ul class="sub-menu">
+										<li class="menu-item">
+											<a
+												href="http://dairy-farm-html.ancorathemes.com/classic.html"><span>Classic</span></a>
+										</li>
+										<li class="menu-item menu-item-has-children">
+											<a
+												href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"><span
+													class="open_child_menu"></span><span>Masonry</span></a>
+											<ul class="sub-menu">
+												<li class="menu-item">
+													<a
+														href="http://dairy-farm-html.ancorathemes.com/masonry-2-columns.html"><span>Masonry
+															2 columns</span></a>
+												</li>
+												<li class="menu-item">
+													<a
+														href="http://dairy-farm-html.ancorathemes.com/masonry-3-columns.html"><span>Masonry
+															3 columns</span></a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children">
+											<a
+												href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"><span
+													class="open_child_menu"></span><span>Portfolio</span></a>
+											<ul class="sub-menu">
+												<li class="menu-item">
+													<a
+														href="http://dairy-farm-html.ancorathemes.com/portfolio-2-columns.html"><span>Portfolio
+															2 columns</span></a>
+												</li>
+												<li class="menu-item">
+													<a
+														href="http://dairy-farm-html.ancorathemes.com/portfolio-3-columns.html"><span>Portfolio
+															3 columns</span></a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item">
+									<a
+										href="http://dairy-farm-html.ancorathemes.com/shop.html"><span>Products</span></a>
+								</li>
+								<li class="menu-item">
+									<a
+										href="http://dairy-farm-html.ancorathemes.com/recipes.html"><span>Recipes</span></a>
+								</li>
+								<li class="menu-item">
+									<a
+										href="http://dairy-farm-html.ancorathemes.com/contacts.html"><span>Contacts</span></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="panel_bottom"></div>
+				</div>
+				<div class="mask"></div>
+			</div>
+			<img src="./pictures/big.jpeg" alt="" />
+			<div class="page_content_wrap page_paddings_no">
+				<div class="content_wrap">
+					<div class="content">
+						<article
+							class="post_item post_item_single post_featured_default post_format_standard page type-page hentry">
+							<section class="post_content">
+								<div data-vc-full-width="true" data-vc-full-width-init="true"
+									class="vc_row wpb_row vc_row-fluid vc_custom_1475063547001" style="
+                      position: relative;
+                      left: -116.667px;
+                      box-sizing: border-box;
+                      width: 1263px;
+                      padding-left: 116.667px;
+                      padding-right: 116.333px;
+                    ">
+									<div class="wpb_column vc_column_container vc_col-sm-12">
+										<div class="vc_column-inner">
+											<div class="wpb_wrapper">
+												<div class="sc_section margin_bottom_small section_style_dark_text animated fadeInUp normal"
+													data-animation="animated fadeInUp normal">
+													<div class="sc_section_inner">
+														<h2
+															class="sc_section_title sc_item_title sc_item_title_without_descr">
+															Welcome To Our Farm!<span></span>
+														</h2>
+														<div class="sc_section_content_wrap">
+															<div
+																class="sc_section sc_section_block margin_bottom_large aligncenter mw800">
+																<div class="sc_section_inner">
+																	<div class="sc_section_content_wrap">
+																		<span class="sc_highlight fst_1">Here you will
+																			find a wide range of
+																			healthy and fresh dairy products that
+																			were proudly produced at our farm by our
+																			farmers and cows. Welcome to
+																			Jacksons!</span>
+																	</div>
+																</div>
+															</div>
+															<div class="vc_empty_space h_6r">
+																<span class="vc_empty_space_inner"></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="vc_row-full-width"></div>
+								<div class="vc_row wpb_row vc_row-fluid">
+									<div class="wpb_column vc_column_container vc_col-sm-12">
+										<div class="vc_column-inner">
+											<div class="wpb_wrapper">
+												<div class="sc_section aligncenter animated fadeInUp normal"
+													data-animation="animated fadeInUp normal">
+													<div class="sc_section_inner">
+														<div class="sc_section_content_wrap">
+															<figure
+																class="sc_image sc_image_shape_square margin_top_huge-">
+																<img style="height: 300px" src="./pictures/logo.jpeg"
+																	alt="" />
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="vc_row wpb_row vc_row-fluid">
+									<div class="wpb_column vc_column_container vc_col-sm-12">
+										<div class="vc_column-inner vc_custom_1475066123130">
+											<div class="wpb_wrapper">
+												<div id="sc_services_918_wrap" class="sc_services_wrap">
+													<div id="sc_services_918"
+														class="sc_services sc_services_style_services-1 sc_services_type_images margin_top_large margin_bottom_large fwidth animated fadeInUp normal"
+														data-animation="animated fadeInUp normal">
+														<div class="sc_columns columns_wrap">
+															<div class="column-1_3 column_padding_bottom">
+																<div id="sc_services_918_1"
+																	class="sc_services_item sc_services_item_1 odd first">
+																	<div
+																		class="sc_services_item_featured post_featured">
+																		<div class="post_thumb" data-image=""
+																			data-title="Our Dairy Farm">
+																			<a class="hover_icon hover_icon_link"
+																				href="http://dairy-farm-html.ancorathemes.com/about-2.html">
+																				<img alt="" style="height: 256px"
+																					src="./pictures/cow.jpg" />
+																			</a>
+																		</div>
+																	</div>
+																	<div class="sc_services_item_content">
+																		<h4 class="sc_services_item_title">
+																			<a
+																				href="http://dairy-farm-html.ancorathemes.com/about-2.html">Our
+																				Dairy Farm</a>
+																		</h4>
+																		<div class="sc_services_item_description">
+																			<div
+																				class="wpb_text_column wpb_content_element">
+																				<div class="wpb_wrapper">
+																					<p>
+																						Lorem ipsum dolor sit amet,
+																						consectetuer adipiscing elit.
+																						Praesent vestibulum molestie
+																						lacus. Aenean nonummy hendrerit
+																						mauris. Phasellus porta.
+																					</p>
+																				</div>
+																			</div>
+																			<a href="http://dairy-farm-html.ancorathemes.com/about-2.html"
+																				class="sc_button sc_button_square sc_button_style_filled sc_button_size_small">discover
+																				history</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="column-1_3 column_padding_bottom">
+																<div id="sc_services_918_2"
+																	class="sc_services_item sc_services_item_2 even">
+																	<div
+																		class="sc_services_item_featured post_featured">
+																		<div class="post_thumb" data-image=""
+																			data-title="Meet Our Cows">
+																			<a class="hover_icon hover_icon_link"
+																				href="http://dairy-farm-html.ancorathemes.com/farm.html">
+																				<img alt=""
+																					src="./Dairy Farm_files/service2-370x300.jpg" />
+																			</a>
+																		</div>
+																	</div>
+																	<div class="sc_services_item_content">
+																		<h4 class="sc_services_item_title">
+																			<a
+																				href="http://dairy-farm-html.ancorathemes.com/farm.html">Meet
+																				Our Cows</a>
+																		</h4>
+																		<div class="sc_services_item_description">
+																			<div
+																				class="wpb_text_column wpb_content_element">
+																				<div class="wpb_wrapper">
+																					<p>
+																						Lorem ipsum dolor sit amet,
+																						consectetuer adipiscing elit.
+																						Praesent vestibulum molestie
+																						lacus. Aenean nonummy hendrerit
+																						mauris. Phasellus porta.
+																					</p>
+																				</div>
+																			</div>
+																			<a href="http://dairy-farm-html.ancorathemes.com/farm.html"
+																				class="sc_button sc_button_square sc_button_style_filled sc_button_size_small">view
+																				cows</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="column-1_3 column_padding_bottom">
+																<div id="sc_services_918_3"
+																	class="sc_services_item sc_services_item_3 odd">
+																	<div
+																		class="sc_services_item_featured post_featured">
+																		<div class="post_thumb" data-image=""
+																			data-title="Our Organic Food">
+																			<a class="hover_icon hover_icon_link"
+																				href="http://dairy-farm-html.ancorathemes.com/shop.html">
+																				<img alt=""
+																					src="./Dairy Farm_files/service1-370x300.jpg" />
+																			</a>
+																		</div>
+																	</div>
+																	<div class="sc_services_item_content">
+																		<h4 class="sc_services_item_title">
+																			<a
+																				href="http://dairy-farm-html.ancorathemes.com/shop.html">Our
+																				Organic Food</a>
+																		</h4>
+																		<div class="sc_services_item_description">
+																			<div
+																				class="wpb_text_column wpb_content_element">
+																				<div class="wpb_wrapper">
+																					<p>
+																						Lorem ipsum dolor sit amet,
+																						consectetuer adipiscing elit.
+																						Praesent vestibulum molestie
+																						lacus. Aenean nonummy hendrerit
+																						mauris. Phasellus porta.
+																					</p>
+																				</div>
+																			</div>
+																			<a href="http://dairy-farm-html.ancorathemes.com/shop.html"
+																				class="sc_button sc_button_square sc_button_style_filled sc_button_size_small">shop
+																				now</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="vc_row-full-width"></div>
+
+								<div class="vc_row wpb_row vc_row-fluid">
+									<div class="wpb_column vc_column_container vc_col-sm-12">
+										<div class="vc_column-inner">
+											<div class="wpb_wrapper">
+												<div class="sc_section sc_section_block margin_top_huge margin_bottom_huge aligncenter animated fadeInUp normal"
+													data-animation="animated fadeInUp normal">
+													<div class="sc_section_inner">
+														<h2
+															class="sc_section_title sc_item_title sc_item_title_without_descr">
+															Products<span></span>
+														</h2>
+														<div class="sc_section_content_wrap">
+															<div
+																class="columns_wrap sc_columns columns_nofluid sc_columns_count_4">
+																<div
+																	class="column-1_4 sc_column_item sc_column_item_1 odd first">
+																	<figure class="sc_image sc_image_shape_round">
+																		<img src="./Dairy Farm_files/img_milk.jpg"
+																			alt="" />
+																	</figure>
+																	<h4 class="sc_title sc_title_regular cmrg_2">
+																		<a
+																			href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#">Milk</a>
+																	</h4>
+																	<div class="wpb_text_column wpb_content_element">
+																		<div class="wpb_wrapper">
+																			<p>
+																				Dairy farming’s been part of
+																				agriculture for thousands of years.
+																			</p>
+																		</div>
+																	</div>
+																</div>
+																<div
+																	class="column-1_4 sc_column_item sc_column_item_2 even">
+																	<figure class="sc_image sc_image_shape_round">
+																		<img src="./Dairy Farm_files/img_cheese.jpg"
+																			alt="" />
+																	</figure>
+																	<h4 class="sc_title sc_title_regular cmrg_2">
+																		<a
+																			href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#">Cheese</a>
+																	</h4>
+																	<div class="wpb_text_column wpb_content_element">
+																		<div class="wpb_wrapper">
+																			<p>
+																				Dairy farming’s been part of
+																				agriculture for thousands of years.
+																			</p>
+																		</div>
+																	</div>
+																</div>
+																<div
+																	class="column-1_4 sc_column_item sc_column_item_3 odd">
+																	<figure class="sc_image sc_image_shape_round">
+																		<img src="./Dairy Farm_files/img_butter.jpg"
+																			alt="" />
+																	</figure>
+																	<h4 class="sc_title sc_title_regular cmrg_2">
+																		<a
+																			href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#">Butter</a>
+																	</h4>
+																	<div class="wpb_text_column wpb_content_element">
+																		<div class="wpb_wrapper">
+																			<p>
+																				Dairy farming’s been part of
+																				agriculture for thousands of years.
+																			</p>
+																		</div>
+																	</div>
+																</div>
+																<div
+																	class="column-1_4 sc_column_item sc_column_item_4 even">
+																	<figure class="sc_image sc_image_shape_round">
+																		<img src="./Dairy Farm_files/img_cream.jpg"
+																			alt="" />
+																	</figure>
+																	<h4 class="sc_title sc_title_regular cmrg_2">
+																		<a
+																			href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#">Cream</a>
+																	</h4>
+																	<div class="wpb_text_column wpb_content_element">
+																		<div class="wpb_wrapper">
+																			<p>
+																				Dairy farming’s been part of
+																				agriculture for thousands of years.
+																			</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="sc_section_button sc_item_button">
+															<a href="http://dairy-farm-html.ancorathemes.com/shop.html"
+																class="sc_button sc_button_square sc_button_style_filled sc_button_size_large">view
+																all products</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="vc_row-full-width"></div>
+								<div class="vc_row wpb_row vc_row-fluid">
+									<div class="wpb_column vc_column_container vc_col-sm-12">
+										<div class="vc_column-inner">
+											<div class="wpb_wrapper">
+												<div class="sc_section margin_top_huge animated fadeInUp normal"
+													data-animation="animated fadeInUp normal">
+													<div class="sc_section_inner">
+														<h2
+															class="sc_section_title sc_item_title sc_item_title_without_descr">
+															Our Shop<span></span>
+														</h2>
+														<div class="sc_section_content_wrap">
+															<div class="woocommerce columns-4">
+																<ul class="products">
+																	<li
+																		class="product has-post-thumbnail first instock purchasable">
+																		<div class="post_item_wrap">
+																			<div class="post_featured">
+																				<div class="post_thumb">
+																					<a class="hover_icon hover_icon_link"
+																						href="http://dairy-farm-html.ancorathemes.com/single-product.html">
+																						<img src="./Dairy Farm_files/product-1-300x300.jpg"
+																							class="attachment-shop_catalog size-shop_catalog"
+																							alt="" />
+																					</a>
+																				</div>
+																			</div>
+																			<div class="post_content">
+																				<h2
+																					class="woocommerce-loop-product__title">
+																					Pecorino Romano
+																				</h2>
+																				<span class="price">
+																					<span
+																						class="woocommerce-Price-amount amount">
+																						<span
+																							class="woocommerce-Price-currencySymbol">Rs.</span>1000
+																					</span>
+																					–
+																					<span
+																						class="woocommerce-Price-amount amount">
+																						<span
+																							class="woocommerce-Price-currencySymbol">Rs.</span>1200
+																					</span>
+																				</span>
+																				<a rel="nofollow"
+																					href="http://dairy-farm-html.ancorathemes.com/single-product.html"
+																					data-quantity="1"
+																					data-product_id="471"
+																					data-product_sku=""
+																					class="button add_to_cart_button">Select
+																					options</a>
+																			</div>
+																		</div>
+																	</li>
+																	<li
+																		class="product has-post-thumbnail instock purchasable">
+																		<div class="post_item_wrap">
+																			<div class="post_featured">
+																				<div class="post_thumb">
+																					<a class="hover_icon hover_icon_link"
+																						href="http://dairy-farm-html.ancorathemes.com/single-product.html">
+																						<img src="./Dairy Farm_files/product-2-300x300.jpg"
+																							class="attachment-shop_catalog size-shop_catalog"
+																							alt="" />
+																					</a>
+																				</div>
+																			</div>
+																			<div class="post_content">
+																				<h2
+																					class="woocommerce-loop-product__title">
+																					Evaporated Milk
+																				</h2>
+																				<span class="price">
+																					<span
+																						class="woocommerce-Price-amount amount">
+																						<span
+																							class="woocommerce-Price-currencySymbol">Rs.</span>250
+																					</span>
+																					–
+																					<span
+																						class="woocommerce-Price-amount amount">
+																						<span
+																							class="woocommerce-Price-currencySymbol">Rs.</span>300
+																					</span>
+																				</span>
+																				<a rel="nofollow"
+																					href="http://dairy-farm-html.ancorathemes.com/single-product.html"
+																					data-quantity="1"
+																					data-product_id="458"
+																					data-product_sku=""
+																					class="button add_to_cart_button">Select
+																					options</a>
+																			</div>
+																		</div>
+																	</li>
+																	<li
+																		class="product has-post-thumbnail instock purchasable">
+																		<div class="post_item_wrap">
+																			<div class="post_featured">
+																				<div class="post_thumb">
+																					<a class="hover_icon hover_icon_link"
+																						href="http://dairy-farm-html.ancorathemes.com/single-product.html">
+																						<img src="./Dairy Farm_files/product-3-300x300.jpg"
+																							class="attachment-shop_catalog size-shop_catalog"
+																							alt="" />
+																					</a>
+																				</div>
+																			</div>
+																			<div class="post_content">
+																				<h2
+																					class="woocommerce-loop-product__title">
+																					Farm Sour Cream
+																				</h2>
+																				<span class="price">
+																					<span
+																						class="woocommerce-Price-amount amount">
+																						<span
+																							class="woocommerce-Price-currencySymbol">Rs</span>200
+																					</span>
+																					–
+																					<span
+																						class="woocommerce-Price-amount amount">
+																						<span
+																							class="woocommerce-Price-currencySymbol">Rs</span>250
+																					</span>
+																				</span>
+																				<a rel="nofollow"
+																					href="http://dairy-farm-html.ancorathemes.com/single-product.html"
+																					data-quantity="1"
+																					data-product_id="448"
+																					data-product_sku=""
+																					class="button add_to_cart_button">Select
+																					options</a>
+																			</div>
+																		</div>
+																	</li>
+																	<li
+																		class="product has-post-thumbnail last instock purchasable">
+																		<div class="post_item_wrap">
+																			<div class="post_featured">
+																				<div class="post_thumb">
+																					<a class="hover_icon hover_icon_link"
+																						href="http://dairy-farm-html.ancorathemes.com/single-product.html">
+																						<img src="./Dairy Farm_files/product-4-300x300.jpg"
+																							class="attachment-shop_catalog size-shop_catalog"
+																							alt="" />
+																					</a>
+																				</div>
+																			</div>
+																			<div class="post_content">
+																				<h2
+																					class="woocommerce-loop-product__title">
+																					Ricotta Salata
+																				</h2>
+																				<span class="price">
+																					<span
+																						class="woocommerce-Price-amount amount">
+																						<span
+																							class="woocommerce-Price-currencySymbol">Rs</span>750
+																					</span>
+																					–
+																					<span
+																						class="woocommerce-Price-amount amount">
+																						<span
+																							class="woocommerce-Price-currencySymbol">Rs</span>1000
+																					</span>
+																				</span>
+																				<a rel="nofollow"
+																					href="http://dairy-farm-html.ancorathemes.com/single-product.html"
+																					data-quantity="1"
+																					data-product_id="438"
+																					data-product_sku=""
+																					class="button add_to_cart_button">Select
+																					options</a>
+																			</div>
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div data-vc-full-width="true" data-vc-full-width-init="true"
+									class="vc_row wpb_row vc_row-fluid vc_custom_1475061036330 inverse_colors" style="
+                      position: relative;
+                      left: -116.667px;
+                      box-sizing: border-box;
+                      width: 1263px;
+                      padding-left: 116.667px;
+                      padding-right: 116.333px;
+                    ">
+									<div class="wpb_column vc_column_container vc_col-sm-12">
+										<div class="vc_column-inner vc_custom_1475062560306">
+											<div class="wpb_wrapper">
+												<div class="sc_section margin_top_huge animated fadeInUp normal"
+													data-animation="animated fadeInUp normal">
+													<div class="sc_section_inner">
+														<h2
+															class="sc_section_title sc_item_title sc_item_title_without_descr">
+															Team<span></span>
+														</h2>
+														<div class="sc_section_content_wrap">
+															<div id="sc_team_973_wrap" class="sc_team_wrap">
+																<div id="sc_team_973"
+																	class="sc_team sc_team_style_team-3 margin_bottom_large">
+																	<div class="sc_columns columns_wrap">
+																		<div class="column-1_4 column_padding_bottom">
+																			<div id="sc_team_973_1"
+																				class="sc_team_item sc_team_item_1 odd first">
+																				<div class="sc_team_item_avatar">
+																					<img alt=""
+																						src="./pictures/profile.jpg" />
+																					<div class="sc_team_item_hover">
+																						<div
+																							class="sc_team_item_socials">
+																							<div
+																								class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+																								<div
+																									class="sc_socials_item">
+																									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+																										target="_blank"
+																										class="social_icons social_twitter">
+																										<span
+																											class="icon-twitter"></span>
+																									</a>
+																								</div>
+																								<div
+																									class="sc_socials_item">
+																									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+																										target="_blank"
+																										class="social_icons social_facebook">
+																										<span
+																											class="icon-facebook"></span>
+																									</a>
+																								</div>
+																								<div
+																									class="sc_socials_item">
+																									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+																										target="_blank"
+																										class="social_icons social_linkedin">
+																										<span
+																											class="icon-linkedin"></span>
+																									</a>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="sc_team_item_info">
+																					<h4 class="sc_team_item_title">
+																						<a
+																							href="http://dairy-farm-html.ancorathemes.com/single-team.html">Bobby
+																							Young</a>
+																					</h4>
+																					<div class="sc_team_item_position">
+																						A Tractor Driver
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="column-1_4 column_padding_bottom">
+																			<div id="sc_team_973_2"
+																				class="sc_team_item sc_team_item_2 even">
+																				<div class="sc_team_item_avatar">
+																					<img alt=""
+																						src="./pictures/profile.jpg" />
+																					<div class="sc_team_item_hover">
+																						<div
+																							class="sc_team_item_socials">
+																							<div
+																								class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+																								<div
+																									class="sc_socials_item">
+																									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+																										target="_blank"
+																										class="social_icons social_twitter">
+																										<span
+																											class="icon-twitter"></span>
+																									</a>
+																								</div>
+																								<div
+																									class="sc_socials_item">
+																									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+																										target="_blank"
+																										class="social_icons social_facebook">
+																										<span
+																											class="icon-facebook"></span>
+																									</a>
+																								</div>
+																								<div
+																									class="sc_socials_item">
+																									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+																										target="_blank"
+																										class="social_icons social_gplus-1">
+																										<span
+																											class="icon-gplus-1"></span>
+																									</a>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="sc_team_item_info">
+																					<h4 class="sc_team_item_title">
+																						<a
+																							href="http://dairy-farm-html.ancorathemes.com/single-team.html">Jose
+																							Morrison</a>
+																					</h4>
+																					<div class="sc_team_item_position">
+																						A Business Owner
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="column-1_4 column_padding_bottom">
+																			<div id="sc_team_973_3"
+																				class="sc_team_item sc_team_item_3 odd">
+																				<div class="sc_team_item_avatar">
+																					<img alt=""
+																						src="./pictures/profile.jpg" />
+																					<div class="sc_team_item_hover">
+																						<div
+																							class="sc_team_item_socials">
+																							<div
+																								class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+																								<div
+																									class="sc_socials_item">
+																									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+																										target="_blank"
+																										class="social_icons social_twitter">
+																										<span
+																											class="icon-twitter"></span>
+																									</a>
+																								</div>
+																								<div
+																									class="sc_socials_item">
+																									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+																										target="_blank"
+																										class="social_icons social_facebook">
+																										<span
+																											class="icon-facebook"></span>
+																									</a>
+																								</div>
+																								<div
+																									class="sc_socials_item">
+																									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+																										target="_blank"
+																										class="social_icons social_gplus-1">
+																										<span
+																											class="icon-gplus-1"></span>
+																									</a>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="sc_team_item_info">
+																					<h4 class="sc_team_item_title">
+																						<a
+																							href="http://dairy-farm-html.ancorathemes.com/single-team.html">Laura
+																							Smith</a>
+																					</h4>
+																					<div class="sc_team_item_position">
+																						A Chief Accountant
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="column-1_4 column_padding_bottom">
+																			<div id="sc_team_973_4"
+																				class="sc_team_item sc_team_item_4 even">
+																				<div class="sc_team_item_avatar">
+																					<img alt=""
+																						src="./pictures/profile.jpg" />
+																					<div class="sc_team_item_hover">
+																						<div
+																							class="sc_team_item_socials">
+																							<div
+																								class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+																								<div
+																									class="sc_socials_item">
+																									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+																										target="_blank"
+																										class="social_icons social_twitter">
+																										<span
+																											class="icon-twitter"></span>
+																									</a>
+																								</div>
+																								<div
+																									class="sc_socials_item">
+																									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+																										target="_blank"
+																										class="social_icons social_facebook">
+																										<span
+																											class="icon-facebook"></span>
+																									</a>
+																								</div>
+																								<div
+																									class="sc_socials_item">
+																									<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+																										target="_blank"
+																										class="social_icons social_linkedin">
+																										<span
+																											class="icon-linkedin"></span>
+																									</a>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="sc_team_item_info">
+																					<h4 class="sc_team_item_title">
+																						<a
+																							href="http://dairy-farm-html.ancorathemes.com/single-team.html">Tyler
+																							Holland</a>
+																					</h4>
+																					<div class="sc_team_item_position">
+																						Our Only Marketer
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="vc_row-full-width"></div>
+
+								<div data-vc-full-width="true" data-vc-full-width-init="true"
+									class="vc_row wpb_row vc_row-fluid vc_custom_1475050026958" style="
+                      position: relative;
+                      left: -116.667px;
+                      box-sizing: border-box;
+                      width: 1263px;
+                      padding-left: 116.667px;
+                      padding-right: 116.333px;
+                    ">
+									<div class="wpb_column vc_column_container vc_col-sm-12">
+										<div class="vc_column-inner vc_custom_1475227276833">
+											<div class="wpb_wrapper">
+												<div id="sc_clients_966_wrap" class="sc_clients_wrap">
+													<div id="sc_clients_966"
+														class="sc_clients sc_clients_style_clients-1 animated fadeIn normal"
+														data-animation="animated fadeIn normal">
+														<div class="sc_slider_swiper swiper-slider-container sc_slider_nopagination sc_slider_nocontrols inited swiper_06020557795950374 swiper-container-horizontal"
+															data-interval="7779" data-slides-per-view="5"
+															data-slides-min-width="100" id="swiper_06020557795950374"
+															style="cursor: grab">
+															<div class="slides swiper-wrapper" style="
+                                    transition-duration: 0ms;
+                                    transform: translate3d(-2000px, 0px, 0px);
+                                  ">
+																<div class="swiper-slide swiper-slide-duplicate"
+																	data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="0">
+																	<div id="sc_clients_966_1"
+																		class="sc_clients_item sc_clients_item_1 odd first">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/5-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide swiper-slide-duplicate"
+																	data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="1">
+																	<div id="sc_clients_966_2"
+																		class="sc_clients_item sc_clients_item_2 even">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/3-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide swiper-slide-duplicate"
+																	data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="2">
+																	<div id="sc_clients_966_3"
+																		class="sc_clients_item sc_clients_item_3 odd">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/2-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide swiper-slide-duplicate"
+																	data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="3">
+																	<div id="sc_clients_966_4"
+																		class="sc_clients_item sc_clients_item_4 even">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/1-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide swiper-slide-duplicate"
+																	data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="4">
+																	<div id="sc_clients_966_5"
+																		class="sc_clients_item sc_clients_item_5 odd">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/4-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide" data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="0">
+																	<div id="sc_clients_966_1"
+																		class="sc_clients_item sc_clients_item_1 odd first">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/5-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide" data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="1">
+																	<div id="sc_clients_966_2"
+																		class="sc_clients_item sc_clients_item_2 even">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/3-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide" data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="2">
+																	<div id="sc_clients_966_3"
+																		class="sc_clients_item sc_clients_item_3 odd">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/2-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide" data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="3">
+																	<div id="sc_clients_966_4"
+																		class="sc_clients_item sc_clients_item_4 even">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/1-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide swiper-slide-prev"
+																	data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="4">
+																	<div id="sc_clients_966_5"
+																		class="sc_clients_item sc_clients_item_5 odd">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/4-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide swiper-slide-duplicate swiper-slide-active"
+																	data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="0">
+																	<div id="sc_clients_966_1"
+																		class="sc_clients_item sc_clients_item_1 odd first">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/5-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide swiper-slide-duplicate swiper-slide-next"
+																	data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="1">
+																	<div id="sc_clients_966_2"
+																		class="sc_clients_item sc_clients_item_2 even">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/3-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide swiper-slide-duplicate"
+																	data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="2">
+																	<div id="sc_clients_966_3"
+																		class="sc_clients_item sc_clients_item_3 odd">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/2-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide swiper-slide-duplicate"
+																	data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="3">
+																	<div id="sc_clients_966_4"
+																		class="sc_clients_item sc_clients_item_4 even">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/1-1.png" />
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide swiper-slide-duplicate"
+																	data-style="width:100%;"
+																	style="position: relative; width: 200px"
+																	data-swiper-slide-index="4">
+																	<div id="sc_clients_966_5"
+																		class="sc_clients_item sc_clients_item_5 odd">
+																		<div class="sc_client_image">
+																			<img alt=""
+																				src="./Dairy Farm_files/4-1.png" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="sc_slider_controls_wrap">
+																<a class="sc_slider_prev"
+																	href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"></a>
+																<a class="sc_slider_next"
+																	href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"></a>
+															</div>
+															<div class="sc_slider_pagination_wrap"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="vc_row-full-width"></div>
+							</section>
+						</article>
+						<section class="related_wrap related_wrap_empty"></section>
+					</div>
+				</div>
+			</div>
+			<footer class="call_wrap">
+				<div class="call_wrap_inner">
+					<div class="content_wrap">
+						<h2 class="call-title">Where to Buy</h2>
+						<div class="call-text">
+							Our Products are currently available at select retailers in
+							Connecticut and New York..
+						</div>
+						<a class="sc_button sc_button_size_large sc_button_style_border"
+							href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#">Store
+							Locator</a>
+					</div>
+				</div>
+			</footer>
+			<footer class="footer_wrap widget_area scheme_original">
+				<div class="footer_wrap_inner widget_area_inner">
+					<div class="content_wrap">
+						<div class="columns_wrap">
+							<aside class="column-1_4 widget widget_nav_menu">
+								<h4 class="widget_title">On the Farm</h4>
+								<div class="menu-footer-menu-1-container">
+									<ul id="menu-footer-menu-1" class="menu">
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/farm.html">Meet Our
+												Farmers</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/recipes.html">Meet the
+												Cows</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/cobbles.html">Famous Dairy
+												Facts</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/grid.html">From the Farm to
+												the Fridge</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/contacts.html">Dairy Farm
+												Map</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/classic.html">Farm
+												Practices</a>
+										</li>
+									</ul>
+								</div>
+							</aside>
+							<aside class="column-1_4 widget widget_nav_menu">
+								<h4 class="widget_title">In the Kitchen</h4>
+								<div class="menu-footer-menu-2-container">
+									<ul id="menu-footer-menu-2" class="menu">
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/recipes.html">Recipes</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/masonry-2-columns.html">Lactose
+												Intolerance</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/shop.html">Milk
+												Imitators</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/portfolio-3-columns.html">Organic
+												Milk</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/portfolio-2-columns.html">Flavored
+												Milk</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/contacts.html">Ask Our
+												Dietitian</a>
+										</li>
+									</ul>
+								</div>
+							</aside>
+							<aside class="column-1_4 widget widget_nav_menu">
+								<h4 class="widget_title">In the News</h4>
+								<div class="menu-footer-menu-3-container">
+									<ul id="menu-footer-menu-3" class="menu">
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/masonry-3-columns.html">Local
+												Milk Blog</a>
+										</li>
+										<li class="menu-item">
+											<a
+												href="http://dairy-farm-html.ancorathemes.com/classic.html">Contests/Sweepstakes</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/cobbles.html">Videos</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/about-1.html">News
+												Releases</a>
+										</li>
+										<li class="menu-item">
+											<a
+												href="http://dairy-farm-html.ancorathemes.com/about-2.html">Newsletters</a>
+										</li>
+									</ul>
+								</div>
+							</aside>
+							<aside class="column-1_4 widget widget_nav_menu">
+								<h4 class="widget_title">About Us</h4>
+								<div class="menu-footer-menu-4-container">
+									<ul id="menu-footer-menu-4" class="menu">
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/contacts.html">FAQ</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/farm.html">Our Board</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/about-2.html">Our Staff</a>
+										</li>
+										<li class="menu-item">
+											<a href="http://dairy-farm-html.ancorathemes.com/contacts.html">Contact
+												Us</a>
+										</li>
+									</ul>
+								</div>
+							</aside>
+							<aside class="column-1_4 widget widget_socials">
+								<div class="widget_inner">
+									<div class="logo">
+										<a href="http://dairy-farm-html.ancorathemes.com/index.html">
+											<img style="height: 80px" src="./pictures/logo.jpeg" class="logo_main"
+												alt="" width="74" height="74" />
+										</a>
+									</div>
+								</div>
+							</aside>
+							<aside class="column-1_4 widget widget_text">
+								<div class="textwidget">
+									Bahria Town Phase 8 Oversease 3 rawalpindi
+									<br />
+									<span class="accent1">Phone: 123-456-7890</span>
+									<br />
+									Fax: 123-456-7890 <br />
+									Email: dairyconnect@gmail.com
+								</div>
+							</aside>
+							<aside class="column-1_4 widget widget_text">
+								<div class="textwidget"></div>
+							</aside>
+							<aside class="column-1_4 widget widget_socials">
+								<div class="widget_inner">
+									<div
+										class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+										<div class="sc_socials_item">
+											<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+												target="_blank" class="social_icons social_twitter">
+												<span class="icon-twitter"></span>
+											</a>
+										</div>
+										<div class="sc_socials_item">
+											<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+												target="_blank" class="social_icons social_facebook">
+												<span class="icon-facebook"></span>
+											</a>
+										</div>
+										<div class="sc_socials_item">
+											<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+												target="_blank" class="social_icons social_gplus-1">
+												<span class="icon-gplus-1"></span>
+											</a>
+										</div>
+										<div class="sc_socials_item">
+											<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#"
+												target="_blank" class="social_icons social_linkedin">
+												<span class="icon-linkedin"></span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div class="copyright_wrap copyright_style_menu scheme_original">
+				<div class="copyright_wrap_inner">
+					<div class="content_wrap">
+						<ul id="menu_footer" class="menu_footer_nav">
+							<li class="menu-item">
+								<a href="http://dairy-farm-html.ancorathemes.com/farm.html"><span>FAQ</span></a>
+							</li>
+							<li class="menu-item">
+								<a href="http://dairy-farm-html.ancorathemes.com/classic.html"><span>News</span></a>
+							</li>
+							<li class="menu-item">
+								<a href="http://dairy-farm-html.ancorathemes.com/contacts.html"><span>Contact
+										Us</span></a>
+							</li>
+						</ul>
+						<div class="copyright_text">
+							<p>
+								AncoraThemes © 2016 All Rights Reserved
+								<a href="http://ancorathemes.com/about/">Terms of Use</a> and
+								<a href="http://ancorathemes.com/about/">Privacy Policy</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="http://dairy-farm-html.ancorathemes.com/?storefront=envato-elements#" class="scroll_to_top icon-up show"
+		title="Scroll to top"></a>
+	<div class="custom_html_section"></div>
+	<script type="text/javascript" src="./Dairy Farm_files/jquery.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/jquery-migrate.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/custom.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/jquery.themepunch.tools.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/jquery.themepunch.revolution.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/revolution.extension.actions.min.js.download"></script>
+	<script type="text/javascript"
+		src="./Dairy Farm_files/revolution.extension.layeranimation.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/revolution.extension.navigation.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/revolution.extension.slideanims.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/modernizr.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/js.cookie.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/superfish.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/core.utils.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/core.init.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/init.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/core.debug.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/embed.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/shortcodes.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/comp_front.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/core.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/widget.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/tabs.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/isotope.pkgd.min.js.download"></script>
+	<script type="text/javascript" src="./Dairy Farm_files/swiper.js.download"></script>
+</body>
+
+</html>
